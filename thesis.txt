@@ -1,0 +1,241 @@
+OPENWINDOW
+Research Notes & Product Thesis
+A focused record of the OpenWindow idea, analog research, competitive conclusions, product evolution, and current strongest direction.
+CURRENT THESIS
+OpenWindow should not be “another shared calendar.” The stronger idea is a system that detects when people who want compatible things are simultaneously available, then converts that overlap into an actionable plan. For friend groups, the product can behave like an autopilot: nobody has to organize; the group mostly says yes or no.
+
+Scope note: This memo intentionally excludes unrelated startup research. Competitors and adjacent products appear only where they clarify OpenWindow.
+ 
+1. Idea evolution
+ORIGINAL IDEA
+Make temporary human availability discoverable: friends, experts, creators, or professionals can expose a short window of free time that would otherwise expire unused.
+
+From “who is free?” to a stronger primitive
+The first version was simple: show which friends or professionals are free during a specific window.
+Competitive research showed that this alone is too shallow. Shared availability, spontaneous-plan broadcasts, and overlapping free-time discovery already exist in several products.
+The concept therefore evolved toward three stronger ideas:
+•	Temporary availability as inventory. A 45-minute gap, free evening, cancelled client hour, or one-week bench period can become useful before it expires.
+•	Private intent. People can express what they would like to do, or whom they would like to spend time with, without awkwardly broadcasting it.
+•	Opportunity detection. OpenWindow should detect useful overlaps and propose an action, rather than merely display calendars.
+KEY INVERSION
+Calendars record when you are busy. Scheduling tools help someone reserve future time. OpenWindow should identify when an unplanned window becomes valuable to the right people now.
+
+2. Competitive landscape and analogs
+The analog research matters because many individual OpenWindow features already exist. The opportunity is therefore in the combination and behavior, not in claiming that “availability” itself is new.
+Product	Relevant behavior	Implication for OpenWindow
+Howbout	Shared social calendar; find overlapping availability; groups and planning.	Very close to basic social availability.
+HangTime	Overlap of friends’ free time.	Close to the simple “who is free?” concept.
+Free to Hang	One-tap availability broadcast and friend notifications.	Almost identical to OpenWindow v0.
+Pronto	Spontaneous plan/beacon for the next hours or day.	Close to “I am free now; who wants to do something?”
+DayGap	Share free windows now/later and find overlap.	Close to availability matching.
+Sha	Friends vote on activities, mark availability, choose a good time.	Close to group-planning version.
+Activity Ace	AI suggests group activities based on vibe/budget; friends vote.	Close to AI activity recommendation + voting.
+Link Up AI	Recurring friend meetups, availability, date voting, activity selection.	Close to friend-group coordination/autopilot pieces.
+DirectLine	Experts monetize idle calendar gaps.	Very close to paid/expert OpenWindow.
+TrunkCall	Experts shown as available now; paid calls.	Close to instant expert access.
+Instant Expert	Users pay hard-to-reach professionals for calls/replies.	Adjacent expert-demand model.
+Flexitroop	Marketplace for idle/bench tech employees.	Very close to B2B capacity variant.
+Bench Connect / Bench FX	Tech consultancies lend available engineers; availability states.	Close to professional-capacity version.
+Mutual	Private interest revealed only when mutual.	Analog for private mutual-intent mechanism.
+
+COMPETITIVE CONCLUSION
+Do not build “see which friends are free,” “experts available now,” or “marketplace for bench developers” as standalone propositions. Each has direct analogs. The stronger OpenWindow is the intersection of temporary availability, private intent, subscription/follow behavior, group memory, and proactive plan creation.
+
+3. Why OpenWindow is not Telegram
+Telegram already solves communication extremely well. OpenWindow should not compete with chat. It should solve coordination that chat does not structure.
+Telegram	OpenWindow
+You actively message a group.	Availability can be discoverable or matched automatically.
+You choose whom to ask.	The system can find relevant people.
+Intent is public and socially awkward.	Intent and constraints can stay private.
+Messages disappear in chat history.	A window is structured state with an expiry.
+“Anyone free?”	“Who is free and compatible with this activity?”
+No memory of group preferences.	The group develops preference/history data.
+No proactive planning.	The system can detect an opportunity and propose a plan.
+No subscription to future availability.	Users can follow a person’s future windows.
+
+POSITIONING
+Telegram can remain the communication and distribution layer. OpenWindow can give a Telegram group a brain: availability, intent, matching, recommendations, voting, and memory.
+
+4. Friend-group autopilot: strongest current product direction
+THE WEDGE
+A friend group should not need an organizer. OpenWindow detects when enough friends are available, proposes the best plan, lets them vote or accept, and remembers what the group likes over time.
+
+Current planning flow
+1.  Someone decides the group should meet.
+2.  They ask everyone for availability.
+3.  The group negotiates dates.
+4.  They debate activities and budget.
+5.  Someone makes the final decision.
+6.  Often the plan dies in chat.
+OpenWindow flow
+1.  Friends maintain lightweight availability or connect selected calendar windows.
+2.  OpenWindow notices a meaningful overlap.
+3.  It ranks activities using group preferences, cost, distance, novelty, and constraints.
+4.  The group receives one or a few concrete options.
+5.  Members mostly tap yes/no or vote.
+6.  When the acceptance threshold is met, the plan is locked.
+Example notification
+OPEN WINDOW FOUND
+4 of 5 friends are free Friday 19:30–22:30. Best match: Bowling + dinner. Estimated 130k/person; average travel 17 minutes; the group has not done it in 3 months. Tap “I’m in” or “Not tonight.”
+
+5. Data model: availability + intent + group memory
+Availability graph
+Each person exposes only the windows relevant to OpenWindow. The product does not need to become a full calendar.
+•	Friday 19:00 onward
+•	Saturday 15:00–22:00
+•	Free for 90 minutes near current location
+Intent graph
+Users can privately express what they would like to do and with whom. Examples:
+•	Coffee with Aziz sometime
+•	Padel with this group
+•	Startup/product conversation
+•	Open to a road trip this month
+•	Would like DevOps advice from a specific expert
+CORE MATCH
+Mutual or compatible intent × overlapping time = opportunity. The computation can be ordinary matching logic; it does not require an LLM.
+
+Group memory
+After plans happen, lightweight feedback creates a group-level taste model. Over time OpenWindow learns the friendship itself, not just isolated user preferences.
+•	Typical meeting days and times
+•	Activities the group repeatedly enjoys or rejects
+•	Typical spend per person
+•	Distance tolerance
+•	How long since the group last met
+•	Which members tend to attend specific activities
+•	Ratings after previous meetups
+•	Which preferences have been ignored recently
+6. Private constraints and fairness
+One advantage over public polls is that users can express constraints without becoming “the difficult person” in the group.
+•	Maximum spend without exposing personal budget
+•	Activities the user does not want suggested
+•	Maximum travel time
+•	Whether they are low-energy and prefer a quiet plan
+•	Whether they are willing to drive
+•	Whether they only want to meet specific subgroups
+Fairness as a product feature
+Majority voting often lets the organizer or loudest person dominate. OpenWindow can optimize for long-term group satisfaction instead of simply counting votes.
+•	Rotate whose preferences receive priority.
+•	Penalize activities that repeatedly win despite low enthusiasm from the same members.
+•	Prefer “minimum regret” plans that are acceptable to everyone over a polarizing majority winner.
+•	Use historical selection frequency so quieter friends are represented.
+7. AI role and low-token architecture
+DESIGN RULE
+AI should be used like a compiler or occasional recommender, not like electricity. Most OpenWindow intelligence should be deterministic: overlap calculations, ranking, constraints, voting, notification rules, and group memory.
+
+What does not require an LLM
+•	Time-window intersection
+•	Group attendance thresholds
+•	Activity preference scores
+•	Budget fit
+•	Travel-distance fit
+•	Novelty / time since last activity
+•	Fairness and rotation logic
+•	Polls and voting
+•	Notifications
+•	Activity-history scoring
+Where AI can help cheaply
+•	Parse “free after work, maybe coffee or something chill” into structured availability and intent.
+•	Turn the top ranked options into friendly, concise proposals.
+•	Explain why a plan fits the group.
+•	Generate unusual activity ideas when the structured catalog has no good option.
+•	Summarize group history occasionally.
+The ideal cadence is one small model call only when a real opportunity is detected, perhaps once per group per week—not one model call for every tap or message.
+8. Other OpenWindow variants
+A. Follow / subscribe to future availability
+This was the least directly occupied behavior found in analog research:
+BEHAVIOR
+“I do not want to schedule with this person right now. Notify me the next time they are open to something I care about.”
+
+•	Follow a founder’s future office hours.
+•	Subscribe to a photographer’s next cancellation.
+•	Follow a friend’s future coffee windows.
+•	Subscribe to a specific expert’s DevOps/Q&A windows.
+A useful positioning line is: Follow people, not their content—their availability.
+B. Expert / creator windows
+•	A valuable person unexpectedly has 30–60 minutes free.
+•	Followers who previously expressed interest receive a notification.
+•	The person can expose several 10–15 minute paid or free slots.
+•	The window expires; no permanent schedule needs to be maintained.
+Competitive warning: DirectLine, TrunkCall, Minnect, Intro, Office Hours, and similar products validate demand but also make a generic “experts available now” marketplace insufficiently differentiated.
+C. Professional capacity / bench time
+•	An agency has a senior engineer free for four days between projects.
+•	The capacity is published as a temporary window.
+•	Another company can consume the window for a short engagement.
+•	This converts expiring salaried capacity into revenue.
+Competitive warning: Flexitroop, Bench Connect, Bench FX and similar products already target bench/capacity liquidity. OpenWindow would need a meaningfully different distribution or cross-category protocol to win here.
+9. Telegram-first distribution
+OpenWindow does not need to replace Telegram. A strong MVP can live around Telegram groups and use Telegram as the identity, notification, and sharing layer.
+Example group flow
+1.  Add @OpenWindowBot to a friend group.
+2.  Each member taps once to set availability/preferences or connect selected calendar data.
+3.  The bot remains mostly silent.
+4.  When a meaningful overlap appears, the bot posts: “5 of 6 are free Saturday 18:00–22:00. Want suggestions?”
+5.  Members vote on two or three ranked plans.
+6.  The winning plan is confirmed and the group chat continues normally.
+DISTRIBUTION THESIS
+OpenWindow should give Telegram groups a brain rather than ask users to abandon Telegram.
+
+10. MVP proposal
+The MVP should test whether proactive opportunity detection causes real meetups. Avoid building a complete calendar, feed, marketplace, or AI assistant.
+MVP objects
+•	Group
+•	Member
+•	Free-time window
+•	Activity preference
+•	Private constraint
+•	Opportunity
+•	Activity proposal
+•	Vote / acceptance
+•	Post-meetup rating
+MVP experience
+1.  Create/import one Telegram friend group.
+2.  Members mark a few free windows for the next seven days.
+3.  Members choose 5–10 activity categories and rough budget/distance preferences.
+4.  OpenWindow detects the best overlap.
+5.  It proposes up to three plans.
+6.  Friends vote or tap “I’m in.”
+7.  After the meetup, collect a one-tap rating.
+8.  Use the rating to improve future ranking.
+Success metric
+NORTH-STAR TEST
+Did OpenWindow create a meetup that probably would not have happened without it? Downloads, polls, or AI chats are secondary.
+
+11. Risks and unresolved questions
+•	Cold start. A social product is useless if a user’s real friends are absent. Telegram-first and link-based participation reduce but do not eliminate this.
+•	Calendar friction. Users may refuse broad calendar access. Manual “free windows” or privacy-preserving busy/free sync may be necessary.
+•	Notification fatigue. Proactive planning becomes annoying if suggestions are too frequent or low quality.
+•	Weak differentiation. Availability + polls + AI ideas already exist. The product must emphasize autopilot, private constraints, group memory, and opportunity detection.
+•	Venue/activity data. High-quality local recommendations require structured information about price, hours, group size, distance, and activity type.
+•	Monetization. Friend-group utility may be difficult to monetize directly. Venue referral fees, premium groups, paid discovery, expert windows, or B2B variants may eventually be needed.
+•	Privacy. The product becomes valuable precisely because it learns sensitive social preferences. Data minimization and user-controlled visibility must be foundational.
+•	Social dynamics. A bad ranking system can reinforce cliques or make some members feel excluded. Fairness logic must be explicit and controllable.
+12. Current strongest thesis
+OPENWINDOW TODAY
+OpenWindow is not a shared calendar. It is a coordination layer that notices when a group has a real opportunity to spend time together, chooses plans that fit their private constraints and history, and reduces human coordination to a few taps.
+
+The strongest current consumer wedge is friend-group autopilot. The product should run quietly until a useful overlap exists, then propose a concrete plan.
+The strongest broader primitive remains temporary human availability as expiring inventory. That primitive can later support expert windows, creators, professional capacity, and other markets—but the MVP should stay narrow.
+Potential positioning lines
+•	Your friend group runs itself.
+•	OpenWindow finds the moment your friends can actually meet—and turns it into a plan.
+•	Stop planning. Start showing up.
+•	The autopilot for seeing your friends.
+•	Follow people, not their content—their availability.
+13. Analog/reference links used in the research
+•	Howbout – finding availability
+•	Free to Hang
+•	Pronto – spontaneous plans
+•	Sha Social
+•	Activity Ace
+•	Link Up AI
+•	DirectLine Experts
+•	TrunkCall
+•	Instant Expert
+•	Flexitroop
+•	Bench Connect
+•	Bench FX
+•	Mutual – private mutual interest
+•	Minnect
+•	Office Hours
+•	Intro
+
