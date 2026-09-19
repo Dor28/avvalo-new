@@ -6,7 +6,7 @@ Version 0.8 — reflects founder priorities from 2026-09-20; exact wording remai
 
 People can turn a shared desire to do something together into a decision and a real meetup quickly, without getting stuck in endless group discussion.
 
-The intended audience is any group arranging a meetup, including friends, families, colleagues, and communities. Uzbekistan is the initial market.
+The intended audience is any group arranging a meetup, including friends, families, colleagues, and communities. Launch in Tashkent, with Uzbekistan as the broader intended market.
 
 ## Mission
 
@@ -16,7 +16,7 @@ Help groups choose a date and place that work for them, reach a decision, and re
 
 “Find a date that works, choose a place that fits, and remember the meetup.”
 
-The founder named all three as core value. Whether remembering meetups means reminders for confirmed plans, prompts to arrange another meetup, or both remains open. Planning still begins with a person initiating.
+The founder named all three as core value, then described reminders as tentative. The desired outcome of remembering meetups remains recorded; reminders are not a committed initial feature. Their scope remains open. Planning still begins with a person initiating.
 
 This promise depends on proving that maintaining availability and preferences does not create excessive work.
 
@@ -40,4 +40,4 @@ The thesis proposes temporary human availability as a broader foundation for fri
 
 ## Still to establish with the founder
 
-First city and specific group profile; personal motivation beyond the stated ambition; which decisions the long-term product should support; boundaries on automated decisions; and what success should look like over the first year.
+Pilot group composition; personal motivation beyond the stated ambition; which decisions the long-term product should support; boundaries on automated decisions; and what success should look like over the first year.

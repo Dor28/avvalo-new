@@ -1,6 +1,6 @@
 # Product interview
 
-Status: round 9 establishes better date/place selection and remembering meetups as core value. Round 10 clarifies reminder scope. Earlier unanswered questions remain open.
+Status: founder requested a separate analysis of differentiation from Telegram polls and broad appeal, then continuation tomorrow. Analysis saved in `strategy-beyond-telegram-polls.md`. Round 15 and earlier unanswered questions remain open; no immediate answer requested.
 
 ## Interview approach
 
@@ -134,10 +134,61 @@ Confirmed priorities: better date selection, better place selection, and not for
 
 Should the product remind people about an already scheduled meetup, remind a group to arrange its next meetup, or both?
 
-Founder answer: pending. Person-initiated planning remains confirmed; a prompt to arrange another meetup would not create a plan automatically.
+Founder answer, 2026-09-20 (verbatim):
+
+> maybe reminders
+
+Interpretation: reminders are a possible feature, not a committed initial requirement. The founder has not selected scheduled-meetup reminders, prompts to arrange another meetup, or both. Preserve the earlier desire not to forget meetups, while leaving the mechanism and scope open. Do not ask for reminder details again until scope decisions require them.
+
+## Round 11 — launch coverage
+
+For the first release, should place recommendations cover all of Uzbekistan, or start in one or a few cities and expand? If starting with specific cities, which ones?
+
+Founder answer, 2026-09-20 (verbatim):
+
+> lets start from tashkent
+
+Confirmed: launch in Tashkent, including initial place recommendation coverage. Uzbekistan remains the broader market; any group remains the intended audience. Expansion timing and boundaries beyond the city are not specified.
+
+## Round 12 — launch languages
+
+Which languages should the first version support for the interface and AI conversation: Uzbek, Russian, both, or also English?
+
+Founder answer, 2026-09-20 (verbatim):
+
+> uzbek and russian
+
+Confirmed: Uzbek and Russian for the first version's interface and AI conversation. Search-source languages are separate. Language selection, Uzbek script support, and mixed-language group behavior remain design details rather than confirmed requirements.
+
+## Round 13 — recommendation or reservation
+
+Should the first version help the group choose a date/place and agree on a plan, leaving any reservation to participants, or should it also book the venue?
+
+Founder answer, 2026-09-20 (verbatim):
+
+> yes, without booking for first versions but lets save for future
+
+Confirmed: initial versions help groups choose and agree on a plan without booking venues. Participants handle reservations. Retain venue booking as a future expansion candidate, with no committed delivery date or implementation.
+
+## Round 14 — free versus paid launch
+
+Should the first version be free while we validate usage, or should it include paid features from launch? It is also fine to leave this undecided.
+
+Founder answer, 2026-09-20 (verbatim):
+
+> yes, lets begin from free, we will decide later monetization and spend on ai
+
+Confirmed: launch free; decide monetization and AI spending later. No budget, paid tier, provider, or usage allowance is selected. Assistant proposal: track pilot AI/search usage and cost to inform later choices. Do not turn that proposal into a spending commitment or ask for a budget immediately after its deferral.
+
+## Round 15 — delivery capacity and timing
+
+Who will build the first version—you alone or a team—and when would you like the first groups to try it?
+
+Founder answer: pending. Answers will shape delivery milestones; no date or staffing assumption has been made.
 
 ## Later rounds — adapt to answers
 
+- Resume with the strategy note requested by the founder: advantage over Telegram polls and appeal beyond early adopters. Recommendations in that note are not approved requirements.
 - Desired outcome: meeting frequency, organizer burden, and what would make the product indispensable.
 - Member behavior: availability input, willingness, freshness, privacy, and acceptable effort.
 - Product authority: proposals, attendance thresholds, silence, confirmation, booking, and cancellation.
@@ -162,3 +213,17 @@ Founder answer: pending. Person-initiated planning remains confirmed; a prompt t
 - 2026-09-20: Founder confirmed Telegram Mini App first and standalone web app later, with a group bot as a tentative companion. Updated overview and plan to version 0.7. Membership rules remain open; next question concerns final decision authority.
 - 2026-09-20: Founder requested flexible decision-making. Recorded support for voting and initiator selection, leaving configuration and default open. Shifted interview to the main value that should drive repeat use.
 - 2026-09-20: Founder prioritized better dates, better places, and not forgetting meetups. Updated overview, vision, and plan to version 0.8; added proposed reminder behavior and asked for clarification of its scope.
+- 2026-09-20: Founder described reminders tentatively. Marked them as a candidate feature, preserved the remembering-meetups outcome, and consolidated the agreed direction in `product-brief.md`. Moved the interview to launch coverage.
+- 2026-09-20: Founder selected Tashkent for launch. Updated overview, vision, plan, and brief; scoped proposed pilot and venue-quality checks to Tashkent. Next question concerns interface and AI conversation languages.
+- 2026-09-20: Founder selected Uzbek and Russian. Updated overview, plan, and brief; added bilingual workflow validation to the plan. Next question concerns whether the first version handles venue reservations.
+- 2026-09-20: Founder excluded booking from initial versions and requested saving it for the future. Updated the scope and added a future expansion register. Next question concerns free versus paid launch.
+- 2026-09-20: Founder chose a free launch and deferred monetization and AI spending. Updated overview, plan, and brief; proposed usage measurement for later decisions. Moved interview to team capacity and target first-test date.
+- 2026-09-20: Founder requested analysis of how the product can outperform Telegram date/place polls and attract many users, saved separately for tomorrow, followed by a push to `main`. Researched selected official product sources and saved the strategy note; left team/timing unanswered.
+
+## Founder request for tomorrow's strategy discussion
+
+Verbatim, 2026-09-20:
+
+> i want you to know think about this thing, people can already create a vote in telegram, with possible dates and places, how our app can be better than this pattern and in general think how our app can be more attractive for mass people, save your thoughts on different file and i will continue with it tomorrow, after you finish git push to main
+
+Response artifact: `strategy-beyond-telegram-polls.md`. It distinguishes researched product facts, strategic judgments, proposed experiments, and existing founder decisions. Publication requested: commit session documents and push to `main`. Actual Git outcome is reported in the assistant's completion message rather than assumed here.

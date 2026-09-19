@@ -6,6 +6,8 @@ Purpose: develop the product overview, vision, and product plan through a collab
 
 ## Documents
 
+- [Strategy for tomorrow: beyond Telegram polls](strategy-beyond-telegram-polls.md): researched comparison, differentiation hypotheses, broader adoption, and a proposed validation plan.
+- [Consolidated product brief](product-brief.md): concise synthesis of the interview so far.
 - [Original thesis snapshot](thesis-source.txt): unchanged source for this session.
 - [Thesis review](thesis-review.md): strengths, tensions, and assumptions to investigate.
 - [Product overview](product-overview.md): what the product does, for whom, and why.
@@ -17,8 +19,8 @@ Purpose: develop the product overview, vision, and product plan through a collab
 
 ## Working method
 
-The overview, vision, and plan are version 0.8 drafts incorporating the core value: better dates, better places, and remembering meetups. They are not a fully approved strategy. The source's proposed direction is distinguished from founder-confirmed decisions and untested assumptions. Competitive claims in the source have not been independently verified in this session.
+The overview, vision, and plan are working drafts incorporating the founder interview. They are not a fully approved strategy. The source's proposed direction is distinguished from founder-confirmed decisions and untested assumptions. The separate strategy note verifies selected current capabilities of Telegram, Doodle, Partiful, and Howbout using official sources. Other competitive claims in the original thesis remain unverified.
 
 Interview in short rounds. Record each answer, update the relevant documents, and identify the next consequential question. The founder can ask questions or challenge proposals at any time. Keep unresolved choices visible rather than inventing answers.
 
-Current state, 2026-09-20: Telegram Mini App first, possible group bot, standalone web app later. The audience is any group arranging a meetup in Uzbekistan, with person-initiated planning, per-meetup availability, a known-place path, and an assisted path using three AI questions and internet discovery. Decision-making supports voting or initiator selection; details remain open. Core value: better dates, better places, and remembering meetups. Preferences and recent meetups inform suggestions. Calendar integration is a possible later expansion. Who answers the AI questions is explicitly deferred. Round 10 clarifies reminder scope; membership and earlier unanswered questions remain open. Work continues in the original session folder. No product implementation or external research performed.
+Current state, 2026-09-20: core direction consolidated in `product-brief.md`. Free launch in Tashkent for any group, in Uzbek and Russian, with Uzbekistan as the broader market. Telegram Mini App first, possible group bot, standalone web app later. Known-place coordination or assistance with three AI questions and internet discovery, using per-meetup availability. Decision-making is flexible. Better dates and places are central; reminders are tentative. No booking in initial versions; venue booking and calendar integration are saved for future consideration. Monetization and AI spending are explicitly deferred. Interview is set aside for tomorrow at the founder's request; resume with the separate strategy note. Team/timing and earlier unanswered questions remain open. Focused external product research is complete; no implementation performed.

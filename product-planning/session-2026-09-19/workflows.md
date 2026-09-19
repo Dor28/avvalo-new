@@ -10,6 +10,8 @@ Existing Telegram groups are an inferred starting context. Persistent app groups
 
 At least two workflows are required. The founder has not said these are the only workflows.
 
+Booking boundary confirmed by the founder: neither workflow books venues in initial versions. Participants arrange reservations themselves. A confirmed group plan does not indicate a venue reservation. Booking is saved as a future feature candidate.
+
 ## Flexible decision-making
 
 In response to a choice between group voting and initiator selection, the founder requested flexibility. Preserve both as supported decision approaches rather than imposing one universal rule. Proposed implementation: the initiator selects the decision method for the meetup and participants can see it. This implementation and the default are not yet confirmed.
@@ -70,7 +72,7 @@ Internet search is a confirmed product requirement. Access to Instagram or any p
 
 ## Remembering meetups
 
-Founder-prioritized outcome: help people not forget meetups, alongside better date and place selection. Proposed common step for both workflows: after confirmation, send useful reminders with the current time and place. Timing, recipients, delivery, and controls are not yet defined. Reminders should reflect rescheduling and cancellation; technical delivery feasibility has not been verified.
+Founder-prioritized outcome: help people not forget meetups, alongside better date and place selection. In the follow-up, the founder said “maybe reminders,” so this is a tentative feature. A proposed optional step for both workflows is to send reminders after confirmation with the current time and place. Inclusion, timing, recipients, delivery, and controls are not yet defined. If implemented, reminders should reflect rescheduling and cancellation; technical delivery feasibility has not been verified.
 
 Whether the product should also prompt a group to arrange its next meetup remains an interview question. This would prompt a person to initiate, not automatically create or confirm a plan.
 

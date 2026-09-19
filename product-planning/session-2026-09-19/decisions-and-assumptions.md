@@ -24,6 +24,12 @@
 | D18 | Consider a bot added to Telegram groups as a companion to the initial Mini App. | Tentative founder idea, 2026-09-20; roles and feasibility remain open. |
 | D19 | Keep decision-making flexible between group voting and initiator selection. | Founder response “lets be flexible,” 2026-09-20, to those two options. Default, configuration, and attendance confirmation remain open. |
 | D20 | Prioritize better date selection, better place selection, and helping people remember meetups. | Founder answer, 2026-09-20; exact reminder scope and behavior remain open. |
+| D21 | Keep reminders tentative rather than requiring them in the initial version. | Founder follow-up “maybe reminders,” 2026-09-20; interpretation preserves D20's desired outcome without assuming a feature commitment. |
+| D22 | Start in Tashkent. | Founder answer, 2026-09-20; resolves initial city choice under D03. Uzbekistan remains the broader market. |
+| D23 | Support Uzbek and Russian for the interface and AI conversation at launch. | Founder answer, 2026-09-20; script support and language selection remain design details. |
+| D24 | Exclude venue booking from initial versions and retain it for future consideration. | Founder answer, 2026-09-20; participants handle reservations initially. Future timing and scope remain open. |
+| D25 | Launch free to users. | Founder answer, 2026-09-20; no paid features selected for launch. |
+| D26 | Defer monetization and AI spending decisions until later. | Founder answer, 2026-09-20; no revenue model, spending budget, provider, or usage allowance selected. |
 
 ## Working directions from the thesis — awaiting confirmation
 
@@ -54,10 +60,10 @@
 
 ## Open decisions
 
-Next clarification: reminders for confirmed meetups, prompts to arrange another meetup, or both. The founder confirmed the outcome of not forgetting meetings, not a specific reminder mechanism.
+Reminders remain tentative after the founder's follow-up; defer detailed behavior until scope prioritization. Venue booking is deferred under D24. Monetization and AI spending are explicitly deferred under D26. Next interview topic: team capacity and target first-test date.
 
 Explicitly deferred by the founder, 2026-09-20: who answers the three AI questions. No default selected. Proposed next step is to compare initiator-only and individual-answer prototypes after clarifying the use case.
 
-First city within Uzbekistan and pilot group composition; initial outing categories; meaning of holidays; problem severity across group types; persistent groups versus meetup-specific invitations; three-question content and respondent; per-meetup availability entry details; preference reuse; history capture and use; search source feasibility; Telegram entry/sharing/notification flow and bot responsibilities; required member participation; number of proposals; final decision and attendance confirmation rules; privacy and inclusion rules; pilot access; success thresholds; team capacity; budget; launch horizon; later web app scope; and revenue model.
+Pilot group composition in Tashkent; initial outing categories; meaning of holidays; problem severity across group types; persistent groups versus meetup-specific invitations; three-question content and respondent; per-meetup availability entry details; preference reuse; history capture and use; search source feasibility; language selection and Uzbek script support; Telegram entry/sharing/notification flow and bot responsibilities; required member participation; number of proposals; final decision and attendance confirmation rules; privacy and inclusion rules; pilot access; success thresholds; team capacity; launch horizon; and later web app and booking scope. Monetization and AI spending remain deferred rather than immediate interview requirements.
 
-Competitive statements remain source claims, not verified findings from this session.
+Selected current capabilities of Telegram, Doodle, Partiful, and Howbout were checked against official sources on 2026-09-20 and are cited in `strategy-beyond-telegram-polls.md`. Other competitive statements from the original thesis remain unverified. Strategic recommendations in that note are proposals for tomorrow, not founder-approved scope changes.

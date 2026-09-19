@@ -2,6 +2,8 @@
 
 Basis: `thesis-source.txt`. This is an analysis of the supplied thesis, not independent market validation.
 
+Follow-up, 2026-09-20: see [strategy beyond Telegram polls](strategy-beyond-telegram-polls.md) for selected verified current product capabilities. In particular, Telegram's poll functionality is richer than the original thesis's comparison suggests. The source snapshot remains unchanged as a historical record.
+
 ## Strongest elements
 
 1. A concrete outcome: more real meetups with less organizing work. This gives the product a better test than calendar usage or poll responses.
